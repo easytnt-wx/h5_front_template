@@ -1,0 +1,52 @@
+{
+  "name": "front-h5-demo",
+  "version": "1.0.0",
+  "description": "移动端h5项目模版",
+  "author": "wangxiang",
+  "license": "MIT",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.1.2",
+    "md5": "^2.2.1",
+    "moment": "^2.24.0",
+    "store": "^2.0.12",
+    "vue": "2.6.14",
+    "vue-router": "3.5.1",
+    "vuex": "3.1.1",
+    "axios": ">=0.21.1",
+    "vant": "^2.2.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.2.1",
+    "@vue/cli-plugin-router": "^4.0.4",
+    "@vue/cli-plugin-unit-jest": "^4.0.4",
+    "@vue/cli-plugin-vuex": "^4.0.4",
+    "babel-plugin-import": "^1.12.2",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "file-loader": "^6.2.0",
+    "git-revision-webpack-plugin": "^3.0.6",
+    "regenerator-runtime": "^0.13.9",
+    "vue-svg-icon-loader": "^2.1.1",
+    "webpack-theme-color-replacer": "^1.3.12",
+    "less": "^3.8.1",
+    "less-loader": "^5.0.0",
+    "postcss-px-to-viewport": "^1.1.0",
+    "vue-template-compiler": "2.6.14"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "Android >= 4.0",
+    "iOS >= 8"
+  ]
+}

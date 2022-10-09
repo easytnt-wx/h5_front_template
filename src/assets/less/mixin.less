@@ -1,0 +1,84 @@
+.fs-lh-fw (@size) when (@size <= 10) {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.fs-lh-fw (@size) when (@size = 12) {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.fs-lh-fw (@size) when (@size = 14) {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.fs-lh-fw (@size) when (@size = 16) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.fs-lh-fw (@size) when (@size = 18) {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.fs-lh-fw (@size) when (@size = 20) {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.fs-lh-fw (@size) when (@size > 20) {
+    font-size: @size * 1px;
+    font-weight: 600;
+    line-height: (@size+8) * 1px;
+}
+
+// 清除浮动
+.clear-float() {
+    /* for IE6 IE7 */
+    zoom: 1;
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: ' ';
+        clear: both;
+        height: 0;
+    }
+}
+
+// 单行文本省略号...
+.ellipsis-single() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+// 多行文本省略号...
+.ellipsis-multi(@num: 2) {
+    display: -webkit-box;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+    word-break: break-all;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @num;
+}
+
+// 强制换行
+.toWrap() {
+    /* 只对英文起作用，以字母作为换行依据。 */
+    word-break: break-all;
+    /* 只对英文起作用，以单词作为换行依据。*/
+    word-wrap: break-word;
+    /* 只对中文起作用，强制换行。*/
+    white-space: pre-wrap;
+}
